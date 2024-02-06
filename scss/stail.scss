@@ -1,0 +1,150 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #36384d;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  padding: 40px 0px 40px 40px;
+  gap: 70px;
+  background-color: #fff;
+  width: 958px;
+  border-radius: 20px;
+  .tital {
+    h1 {
+      color: #242742;
+      font-family: Roboto;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-top: -0px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #242742;
+      width: 376px;
+      margin-bottom: 24px;
+    }
+    ul {
+      margin-bottom: 30px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        input {
+          appearance: none;
+          &::before {
+            content: "";
+            width: 21px;
+            height: 21px;
+            background-color: #ffffff;
+            display: inline-block;
+            border: 1px solid #000;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          &:active {
+            content: "\f00c";
+            font-weight: 900;
+            font-family: "Font Awesome 5 free";
+            width: 25px;
+            height: 25px;
+            &::before {
+              content: "\f00c";
+              font-weight: 900;
+              font-family: "Font Awesome 5 free";
+              border: none;
+              background-color: #ff6155;
+            }
+          }
+        }
+        label {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+          cursor: pointer;
+        }
+      }
+    }
+    .input-email {
+      h3 {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #242742;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 376px;
+        height: 56px;
+        border-radius: 15px;
+        border: 1px solid #c5c5ca;
+        padding-left: 24px;
+        margin-bottom: 24px;
+        display: block;
+      }
+      a {
+        background: #242742;
+        padding: 18px 71px 14px 72px;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px;
+      }
+    }
+  }
+}
